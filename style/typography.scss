@@ -8,6 +8,7 @@ $outfit: "Outfit", serif;
     font-family: $family;
     font-size: $size;
     font-weight: $weight;
+    letter-spacing: 0px;
 
     @if $family == $outfit {
         line-height: 150%;
