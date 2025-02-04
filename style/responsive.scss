@@ -1,0 +1,16 @@
+// add as needed
+
+$mobile: 500px;
+$tablet: 1024px;
+
+@mixin breakpoint-mobile {
+    @media screen and (max-width: $mobile){
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}

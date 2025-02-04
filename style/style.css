@@ -10,24 +10,62 @@ html {
 }
 
 body {
-  background-color: #7A284E;
+  background-color: #F3E5D7;
+  padding: 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    padding: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0;
+  }
 }
 
 .recipe {
   background-color: #FFFFFF;
-  padding: 1.25rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  font-family: "Outfit", serif;
+  font-size: 1rem;
+  font-weight: regular;
+  letter-spacing: 0px;
+  line-height: 150%;
+  color: #5F564D;
+}
+@media screen and (max-width: 500px) {
+  .recipe {
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 2rem 2.5rem;
+  }
+}
+.recipe > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.recipe h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.5rem;
+  font-weight: regular;
+  letter-spacing: 0px;
+  line-height: 100%;
+  color: #854632;
 }
 .recipe ul, .recipe ol {
   list-style-position: inside;
 }
 .recipe > img {
   width: 100%;
-}
-.recipe > * {
-  padding: 1rem;
 }
 
 .introduction > h1 {
@@ -38,17 +76,10 @@ body {
   line-height: 100%;
   color: #312E2C;
 }
-.introduction > p {
-  font-family: "Outfit", serif;
-  font-size: 1rem;
-  font-weight: regular;
-  letter-spacing: 0px;
-  line-height: 150%;
-  color: #5F564D;
-}
 
 .prep-time {
   background-color: #FFF7FB;
+  padding: 1.5rem;
 }
 .prep-time > h2 {
   font-family: "Outfit", serif;
