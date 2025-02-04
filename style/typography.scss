@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+$young-serif: "Young Serif", serif;
+$outfit: "Outfit", serif;
+
+@mixin font($family: $young-serif, $size, $weight){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+
+    @if $family == $outfit {
+        line-height: 150%;
+    } @else {
+        line-height: 100%;
+    }
+}
