@@ -1,12 +1,14 @@
+@use './size.scss' as size;
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 
 $young-serif: "Young Serif", serif;
 $outfit: "Outfit", serif;
 
-@mixin font($family: $young-serif, $size, $weight){
+@mixin font($family: $young-serif, $font-size, $weight){
     font-family: $family;
-    font-size: $size;
+    font-size: $font-size;
     font-weight: $weight;
     letter-spacing: 0px;
 
@@ -15,4 +17,25 @@ $outfit: "Outfit", serif;
     } @else {
         line-height: 100%;
     }
+}
+
+
+@mixin preset-1 {
+    @include font($young-serif, size.$space-500, regular);
+}
+
+@mixin preset-2 {
+    @include font($young-serif, size.$space-300, regular);
+}
+
+@mixin preset-3 {
+    @include font($outfit, size.$space-250, regular);
+}
+
+@mixin preset-4 {
+    @include font($outfit, size.$space-200, regular);
+}
+
+@mixin preset-4--bold {
+    @include font($outfit, size.$space-200, bold);
 }

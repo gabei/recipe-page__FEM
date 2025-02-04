@@ -1,5 +1,42 @@
 @use './reset.scss';
-@use './typography.scss';
-@use './spacing.scss';
-@use './color.scss';
+@use './typography.scss' as type;
+@use './size.scss' as size;
+@use './color.scss' as color;
 
+body {
+    background-color: color.$rose-800;
+}
+
+.recipe {
+    background-color: color.$white;
+}
+
+.introduction {
+    & > h1 {
+        @include type.preset-1;
+        color: color.$stone-900;
+    }
+
+    & > p {
+        @include type.preset-4;
+        color: color.$stone-600;
+    }
+}
+
+.prep-time {
+    background-color: color.$rose-50;
+
+    > h2 {
+        @include type.preset-3;
+        color: color.$rose-800;
+    }
+
+    > ul {
+        @include type.preset-4;
+        > li {
+            > span {
+                font-weight: bold;
+            }
+        } 
+    }
+}
