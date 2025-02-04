@@ -14,8 +14,16 @@ body {
     flex-direction: column;
     gap: size.$space-250;
 
+    ul, ol {
+        list-style-position: inside;
+    }
+
     > img {
         width: 100%;
+    }
+
+    > * {
+        padding: size.$space-200;
     }
 }
 

@@ -20,8 +20,14 @@ body {
   flex-direction: column;
   gap: 1.25rem;
 }
+.recipe ul, .recipe ol {
+  list-style-position: inside;
+}
 .recipe > img {
   width: 100%;
+}
+.recipe > * {
+  padding: 1rem;
 }
 
 .introduction > h1 {
