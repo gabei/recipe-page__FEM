@@ -9,6 +9,14 @@ body {
 
 .recipe {
     background-color: color.$white;
+    padding: size.$space-250;
+    display: flex;
+    flex-direction: column;
+    gap: size.$space-250;
+
+    > img {
+        width: 100%;
+    }
 }
 
 .introduction {

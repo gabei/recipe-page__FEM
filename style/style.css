@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #7A284E;
+}
+
+.recipe {
+  background-color: #FFFFFF;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.recipe > img {
+  width: 100%;
+}
+
+.introduction > h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+  font-weight: regular;
+  letter-spacing: 0px;
+  line-height: 100%;
+  color: #312E2C;
+}
+.introduction > p {
+  font-family: "Outfit", serif;
+  font-size: 1rem;
+  font-weight: regular;
+  letter-spacing: 0px;
+  line-height: 150%;
+  color: #5F564D;
+}
+
+.prep-time {
+  background-color: #FFF7FB;
+}
+.prep-time > h2 {
+  font-family: "Outfit", serif;
+  font-size: 1.25rem;
+  font-weight: regular;
+  letter-spacing: 0px;
+  line-height: 150%;
+  color: #7A284E;
+}
+.prep-time > ul {
+  font-family: "Outfit", serif;
+  font-size: 1rem;
+  font-weight: regular;
+  letter-spacing: 0px;
+  line-height: 150%;
+}
+.prep-time > ul > li > span {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
