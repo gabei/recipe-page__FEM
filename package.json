@@ -1,0 +1,19 @@
+{
+  "name": "recipe-page__fem",
+  "version": "1.0.0",
+  "description": "Recipe page exercise from FrontEndMentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabei/recipe-page__FEM.git"
+  },
+  "author": "Gabe Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabei/recipe-page__FEM/issues"
+  },
+  "homepage": "https://github.com/gabei/recipe-page__FEM#readme"
+}
