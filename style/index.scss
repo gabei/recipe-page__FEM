@@ -108,3 +108,26 @@ body {
         }
     }
 }
+
+.nutrition {
+    table {
+        border-collapse: collapse;
+    }
+
+    tr {
+        border-bottom: 1px solid color.$stone-100;
+
+        td {
+            padding: size.$space-200;
+        }
+
+        td:last-child {
+            @include type.preset-4--bold;
+            color: color.$brown-800;
+        }
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+}

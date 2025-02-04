@@ -112,4 +112,25 @@ body {
   color: #854632;
 }
 
+.nutrition table {
+  border-collapse: collapse;
+}
+.nutrition tr {
+  border-bottom: 1px solid #F3E5D7;
+}
+.nutrition tr td {
+  padding: 1rem;
+}
+.nutrition tr td:last-child {
+  font-family: "Outfit", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 150%;
+  color: #854632;
+}
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
 /*# sourceMappingURL=style.css.map */
