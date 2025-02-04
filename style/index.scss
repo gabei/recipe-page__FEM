@@ -67,6 +67,7 @@ body {
 .prep-time {
     background-color: color.$rose-50;
     padding: 1.5rem;
+    border-radius: size.$space-150;
 
     > h2 {
         @include type.preset-3;
@@ -75,10 +76,35 @@ body {
 
     > ul {
         @include type.preset-4;
+    
         > li {
             > span {
                 font-weight: bold;
             }
+
+            &::marker {
+                color: color.$rose-800;
+            }
         } 
+    }
+}
+
+.ingredients {
+    > ul {
+        > li {
+            &::marker {
+                color: color.$brown-800;
+            }
+        }
+    }
+}
+
+.instructions {
+    > ol {
+        > li {
+            &::marker {
+                color: color.$brown-800;
+            }
+        }
     }
 }

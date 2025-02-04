@@ -80,6 +80,7 @@ body {
 .prep-time {
   background-color: #FFF7FB;
   padding: 1.5rem;
+  border-radius: 0.75rem;
 }
 .prep-time > h2 {
   font-family: "Outfit", serif;
@@ -98,6 +99,17 @@ body {
 }
 .prep-time > ul > li > span {
   font-weight: bold;
+}
+.prep-time > ul > li::marker {
+  color: #7A284E;
+}
+
+.ingredients > ul > li::marker {
+  color: #854632;
+}
+
+.instructions > ol > li::marker {
+  color: #854632;
 }
 
 /*# sourceMappingURL=style.css.map */
